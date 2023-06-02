@@ -57,8 +57,9 @@ sudo ./LFS_Volatility_Tool.sh
 
 
 ----------------------------------------------------------
-Tools are under development. Your thoughts about vehicles are important to me. If you want to reach, you can reach from Linkedin.
-linkedin.com/in/barışceviz 
+I keep adding new features to the tools. Your thoughts about tools are important to me. 
+
+If you want to reach, you can reach from Linkedin.
 
 
 
