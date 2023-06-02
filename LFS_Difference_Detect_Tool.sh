@@ -48,7 +48,7 @@ for file in LFS_Baseline_Tool/*; do
     if [[ -f "${file}" ]]; then
         filename=$(basename -- "${file}")
         if [ -f "LFS_Forensic_Tool/${filename}" ]; then
-            outputfile="Jotform-Difference-Results/diff_${filename}.txt"
+            outputfile="LFS-Difference-Results/diff_${filename}.txt"
             echo "Comparing ${filename} and LFS_Forensic_Tool/${filename}. Output file: ${outputfile}" >> $DEST/log_Difference.txt
             diff "${file}" "LFS_Forensic_Tool/${filename}" > "${outputfile}"
             echo "************************************************" >> $DEST/log_Difference.txt
