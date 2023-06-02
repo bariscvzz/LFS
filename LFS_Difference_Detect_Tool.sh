@@ -39,8 +39,8 @@ function server_command_tool() {
 unzip -q LFS_Baseline_Tool.zip
 unzip -q LFS_Forensic_Tool.zip
 
-mkdir -p "$(pwd)/Jotform-Difference-Results"
-DEST="$(pwd)/Jotform-Difference-Results/"
+mkdir -p "$(pwd)/LFS-Difference-Results"
+DEST="$(pwd)/LFS-Difference-Results/"
 
 touch $DEST/log_Difference.txt
 
