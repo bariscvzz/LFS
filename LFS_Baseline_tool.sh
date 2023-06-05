@@ -185,7 +185,10 @@ echo "==========================================================================
 echo "List of startup services at boot:"
 echo "19- systemctl list-unit-files --type=service" | tee -a $DEST/$baseline_collection_log
 echo " " >> $DEST/$baseline_collection_log
-systemctl list-unit-files --type=service > "$DEST/19-systemctl_list_unit_files.log"
+systemctl list-unit-files --type=service > "$(pwd)"/LFS_Baseline_Tool/19_systemctl_list_unit_files.log
+python3 convert_to_html.py "$(pwd)"/LFS_Baseline_Tool/19_systemctl_list_unit_files.log 19_systemctl_list_unit_files.html $DEST/$baseline_collection_log
+rm "$(pwd)"/LFS_Baseline_Tool/19_systemctl_list_unit_files.log
+mv 19_systemctl_list_unit_files.html "$(pwd)"/LFS_Baseline_Tool/
 echo " " >> $DEST/$baseline_collection_log
 echo "======================================================================================" >> $DEST/$baseline_collection_log
 echo "List of services and their status:" >> $DEST/$baseline_collection_log
@@ -216,37 +219,55 @@ echo "==========================================================================
 echo "List of open files on the system and the process ID that opened them:" >> $DEST/$baseline_collection_log
 echo "23- lsof " | tee -a $DEST/$baseline_collection_log
 echo " " >> $DEST/$baseline_collection_log
-lsof 2>/dev/null > "$DEST/23-lsof.log"
+lsof 2>/dev/null > "$(pwd)"/LFS_Baseline_Tool/23_lsof.log
+python3 convert_to_html.py "$(pwd)"/LFS_Baseline_Tool/23_lsof.log 23_lsof.html >> $DEST/$baseline_collection_log
+rm "$(pwd)"/LFS_Baseline_Tool/23_lsof.log
+mv 23_lsof.html "$(pwd)"/LFS_Baseline_Tool/
 echo " " >> $DEST/$baseline_collection_log
 echo "======================================================================================" >> $DEST/$baseline_collection_log
 echo "List of network connections:" >> $DEST/$baseline_collection_log
 echo "24- netstat -a " | tee -a $DEST/$baseline_collection_log
 echo " " >> $DEST/$baseline_collection_log
-netstat -a > "$DEST/24-netstat-a.log"
+netstat -a > "$(pwd)"/LFS_Baseline_Tool/24_netstat_a.log
+python3 convert_to_html.py "$(pwd)"/LFS_Baseline_Tool/24_netstat_a.log 24_netstat_a.html >> $DEST/$baseline_collection_log
+rm "$(pwd)"/LFS_Baseline_Tool/24_netstat_a.log
+mv 24_netstat_a.html "$(pwd)"/LFS_Baseline_Tool/
 echo " " >> $DEST/$baseline_collection_log
 echo "======================================================================================" >> $DEST/$baseline_collection_log
 echo "List of network interfaces:" >> $DEST/$baseline_collection_log
 echo "25- netstat -i " | tee -a $DEST/$baseline_collection_log
 echo " " >> $DEST/$baseline_collection_log
-netstat -i > "$DEST/25-netstat-i.log"
+netstat -i > "$(pwd)"/LFS_Baseline_Tool/25_netstat_i.log
+python3 convert_to_html.py "$(pwd)"/LFS_Baseline_Tool/25_netstat_i.log 25_netstat_i.html >> $DEST/$baseline_collection_log
+rm "$(pwd)"/LFS_Baseline_Tool/25_netstat_i.log
+mv 25_netstat_i.html "$(pwd)"/LFS_Baseline_Tool/
 echo " " >> $DEST/$baseline_collection_log
 echo "======================================================================================" >> $DEST/$baseline_collection_log
 echo "List of kernel network routing table:" >> $DEST/$baseline_collection_log
 echo "26- netstat -r " | tee -a $DEST/$baseline_collection_log
 echo " " >> $DEST/$baseline_collection_log
-netstat -r > "$DEST/26-netstat-r.log"
+netstat -r > "$(pwd)"/LFS_Baseline_Tool/26_netstat_r.log
+python3 convert_to_html.py "$(pwd)"/LFS_Baseline_Tool/26_netstat_r.log 26_netstat_r.html >> $DEST/$baseline_collection_log
+rm "$(pwd)"/LFS_Baseline_Tool/26_netstat_r.log
+mv 26_netstat_r.html "$(pwd)"/LFS_Baseline_Tool/
 echo " " >> $DEST/$baseline_collection_log
 echo "======================================================================================" >> $DEST/$baseline_collection_log
 echo "List of network connections:" >> $DEST/$baseline_collection_log
 echo "27- netstat -nalp " | tee -a $DEST/$baseline_collection_log
 echo " " >> $DEST/$baseline_collection_log
-netstat -nalp > "$DEST/27-netstat-nalp.log"
+netstat -nalp > "$(pwd)"/LFS_Baseline_Tool/27_netstat_nalp.log
+python3 convert_to_html.py "$(pwd)"/LFS_Baseline_Tool/27_netstat_nalp.log 27_netstat_nalp.html >> $DEST/$baseline_collection_log
+rm "$(pwd)"/LFS_Baseline_Tool/27_netstat_nalp.log
+mv 27_netstat_nalp.html "$(pwd)"/LFS_Baseline_Tool/
 echo " " >> $DEST/$baseline_collection_log
 echo "======================================================================================" >> $DEST/$baseline_collection_log
 echo "List of Network Connections:" >> $DEST/$baseline_collection_log
 echo "28- netstat -plant " | tee -a $DEST/$baseline_collection_log
 echo " " >> $DEST/$baseline_collection_log
-netstat -plant > "$DEST/28-netstat-plant.log"
+netstat -plant > "$(pwd)"/LFS_Baseline_Tool/28_netstat_plant.log
+python3 convert_to_html.py "$(pwd)"/LFS_Baseline_Tool/28_netstat_plant.log 28_netstat_plant.html >> $DEST/$baseline_collection_log
+rm "$(pwd)"/LFS_Baseline_Tool/28_netstat_plant.log
+mv 28_netstat_plant.html "$(pwd)"/LFS_Baseline_Tool/
 echo " " >> $DEST/$baseline_collection_log
 echo "======================================================================================" >> $DEST/$baseline_collection_log
 echo "List of the ARP table cache (Address Resolution Protocol):" >> $DEST/$baseline_collection_log
