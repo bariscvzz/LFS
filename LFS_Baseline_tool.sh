@@ -321,7 +321,7 @@ echo "**************************************************************************
 echo " " >> $DEST/$baseline_collection_log
 echo "======================================================================================" >> $DEST/$baseline_collection_log
 echo "Adding to Zip File" | tee -a $DEST/$baseline_collection_log
-cd "$DEST" && cd .. && zip -r LFS_Baseline_Tool.zip ./LFS_Baseline_Tool -i "*"
+cd "$DEST" && cd .. && zip -r LFS_Baseline_Tool.zip ./LFS_Baseline_Tool -i "*" >> $DEST/$baseline_collection_log
 echo "======================================================================================" | tee -a $DEST/$baseline_collection_log
 echo "Baseline Tool COMPLETED Forensic and DELETE forensic files" | tee -a $DEST/$baseline_collection_log
 echo "**************************************************************************************" | tee -a $DEST/$baseline_collection_log
