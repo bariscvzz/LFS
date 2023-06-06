@@ -4,7 +4,7 @@
 Please give executable authorization when playing scripts. Please run this scripts with root or sudo priviliges.
 
 
-Please run the LFS_Forensic_Triage_Tool.sh and JLFS_Baseline_Tool.sh files in the same directory as the convert_to_html.py file
+Please run the LFS_Forensic_Triage_Tool.sh and LFS_Baseline_Tool.sh files in the same directory as the convert_to_html.py file
 
 
 The output will be saved as a zip file in the directory you are in.
