@@ -17,43 +17,43 @@ Example:
 ----------------------------------------------------------
 
 
-chmod +x LFS_Memory_Dump_Tool.sh
+`chmod +x LFS_Memory_Dump_Tool.sh`
 
 
-sudo ./LFS_Memory_Dump_Tool.sh
-
-
-----------------------------------------------------------
-
-chmod +x LFS_Forensic_Triage_Tool.sh
-
-
-sudo ./LFS_Forensic_Triage_Tool.sh
+`sudo ./LFS_Memory_Dump_Tool.sh`
 
 
 ----------------------------------------------------------
 
-chmod +x LFS_Baseline_Tool.sh
+`chmod +x LFS_Forensic_Triage_Tool.sh`
 
 
-sudo ./LFS_Baseline_Tool.sh
-
-
-----------------------------------------------------------
-
-chmod +x LFS_Difference_Detect_Tool.sh
-
-
-sudo ./LFS_Difference_Detect_Tool.sh
+`sudo ./LFS_Forensic_Triage_Tool.sh`
 
 
 ----------------------------------------------------------
 
+`chmod +x LFS_Baseline_Tool.sh`
 
-chmod +x LFS_Volatility_Tool.sh
+
+`sudo ./LFS_Baseline_Tool.sh`
 
 
-sudo ./LFS_Volatility_Tool.sh
+----------------------------------------------------------
+
+`chmod +x LFS_Difference_Detect_Tool.sh`
+
+
+`sudo ./LFS_Difference_Detect_Tool.sh`
+
+
+----------------------------------------------------------
+
+
+`chmod +x LFS_Volatility_Tool.sh`
+
+
+`sudo ./LFS_Volatility_Tool.sh`
 
 
 ----------------------------------------------------------
