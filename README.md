@@ -13,8 +13,8 @@ The output will be saved as a zip file in the directory you are in.
 To use LFS_Difference_Detect_Tool.sh, please put "LFS_Forensic_Tool.zip" and "LFS_Baseline_Tool.zip" files under the same directory
 
 
-Example:
-----------------------------------------------------------
+### Example Usage
+
 
 
 `chmod +x LFS_Memory_Dump_Tool.sh`
